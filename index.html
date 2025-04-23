@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- HEADER -->
+
+  <header class="bg-gray-100 shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between space-x-6">
+      
+      <!-- 1. Mugshot -->
+      <a href="/profile.html" class="flex-shrink-0">
+        <img src="/assets/mugshot.jpg" alt="My Mugshot" class="w-12 h-12 rounded-full border-2 border-gray-400 hover:scale-105 transition duration-200">
+      </a>
+
+      <!-- 2. About -->
+      <a href="#about" class="text-lg font-medium hover:text-blue-600">About</a>
+
+      <!-- 3. Morgue Dropdown -->
+      <div class="relative group">
+        <button class="text-lg font-medium hover:text-blue-600 focus:outline-none">Morgue</button>
+        <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+          <ul class="divide-y divide-gray-200 p-2">
+            <!-- Sample list of writings -->
+            <li><a href="/posts/post1.html" class="block px-4 py-2 hover:bg-gray-100">Post 1: Why I Write</a></li>
+            <li><a href="/posts/post2.html" class="block px-4 py-2 hover:bg-gray-100">Post 2: A View from the Rooftop</a></li>
+            <li><a href="/posts/post3.html" class="block px-4 py-2 hover:bg-gray-100">Post 3: Morning Coffee</a></li>
+            <li><a href="/posts/post4.html" class="block px-4 py-2 hover:bg-gray-100">Post 4: Life in Pixels</a></li>
+            <!-- Add more as needed -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4. Contact -->
+      <a href="#contact" class="text-lg font-medium hover:text-blue-600">Contact</a>
+
+      <!-- 5. Search Box -->
+      <div class="relative w-full max-w-xs ml-auto">
+        <input type="text" placeholder="Search..." class="w-full px-4 py-2 rounded-full border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        <span class="absolute right-3 top-2.5 text-gray-400">
+          🔍
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-4xl mx-auto p-6">
+    <section id="about" class="my-8">
+      <h2 class="text-2xl font-bold mb-4">About This Blog</h2>
+      <p>This blog is a personal archive of my thoughts, stories, and experiments in writing. Welcome and feel free to explore!</p>
+    </section>
+
+    <section id="contact" class="my-8">
+      <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+      <p>Email: me@example.com</p>
+      <p>Twitter: @myhandle</p>
+    </section>
+  </main>
+
+</body>
+</html>
